@@ -1002,10 +1002,12 @@ Setting up the DFMini
 The DFMini Player module is a small music player. It is low cost and low power and reproduces sounds stored on a memory card.
 Based on this, the module can be controlled via the standalone mode, that is, in this mode, there will only be the DFMini module, a battery to power, the speaker, buttons to control it, and the SD card with the songs.
 Another way to control it is to use an Arduino or another control device. The Arduino, for example, will send commands through serial communication with the DFMini Player Module.
+<img width="450" height="150" alt="image" src="https://github.com/user-attachments/assets/3646e291-9222-432f-a57f-330859f74d0e" />
 
 
  
 To control it, it is important to use the basic standalone circuit
+<img width="450" height="477" alt="image" src="https://github.com/user-attachments/assets/a479007b-a00f-40ca-ad45-776c6b68a78a" />
 
 
  
@@ -1015,6 +1017,8 @@ With a quick touch the system returns to the previous song, however, if you pres
 The button connected to pin IO2 is used to go to the next track and increase the volume.
 With a quick touch the system advances to the next song, however, if you press the button for more than 1 second, the system will increase the volume of the song.
 In this standalone method, the songs must be saved on the memory card
+<img width="740" height="358" alt="image" src="https://github.com/user-attachments/assets/61d66b14-bb38-449a-8d3b-c05c3dbffc73" />
+
 
 
  
@@ -1024,11 +1028,14 @@ Now, I'll explain how to control the DFMini Player using the Arduino through ser
 Controlling the DFMini Player with Arduino
 In this step, the volume control, range control, equalization commands and other features will be sent by Arduino.
 The Arduino must communicate via the serial with the DFMini Player and send the control commands.
- 
+
+ <img width="450" height="476" alt="image" src="https://github.com/user-attachments/assets/82f748b6-27b1-4cc5-920c-f593df325b7d" />
+
 First, we must assemble the circuit shown in the Figure below.
 After assembling this circuit, you must add the songs on your memory card. In this step, the songs should be renamed as 01, 02, 03, for example.
 You cannot leave the songs with their names, as there will be a problem when the Arduino sends the command to execute the specific track. Therefore, you must configure as shown below.
 
+<img width="740" height="389" alt="image" src="https://github.com/user-attachments/assets/566f4c4e-3354-4495-bb6f-f215374fbfca" />
 
  
 After naming the files, write the following code on your Arduino.
